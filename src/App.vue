@@ -2,7 +2,7 @@
 import Accueil from "@/components/Accueil.vue";
 import Projets from "@/components/Projets.vue";
 
-const scrollSpeed = 10;
+const scrollSpeed = 20;
 const scrollToTop = () => {
     const scrollInterval = setInterval(() => {
         if (window.scrollY === 0) {
@@ -19,18 +19,17 @@ const scrollToTop = () => {
 <template>
 
     <div class="accueil">
-        <Accueil/>
     </div>
 
+    <RouterView/>
+
     <div class="projets">
-        <Projets />
+        <Projets/>
     </div>
 
     <button class="back-to-top" @click="scrollToTop">
         ↑
     </button>
-
-    <RouterView/>
 </template>
 
 <style scoped>
