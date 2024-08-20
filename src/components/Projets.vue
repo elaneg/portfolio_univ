@@ -198,13 +198,14 @@ export default {
 
 .miniatures {
     display: flex;
+    justify-content: space-evenly;
     gap: 10px;
     margin-top: 10px;
 }
 
 .miniature-image {
-    width: 40px; /* Réduire la largeur des miniatures */
-    height: 40px; /* Réduire la hauteur des miniatures */
+    width: 200px;
+    height: 100px;
     object-fit: cover;
     border-radius: 4px;
     cursor: pointer;
