@@ -4,7 +4,7 @@
     </div>
 
     <div class="phrase">
-        <p>Retrouvez ici mes travaux réalisés au cours de cette troisième année de formation. </p>
+        <p>Retrouvez ici mes travaux réalisés au cours de cette troisième année de bachelor MMI (Métiers du Multimédia et de l'Internet). </p>
         <p><a href="#">Voir le référentiel de compétences</a></p>
     </div>
 </template>
