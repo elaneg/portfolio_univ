@@ -19,18 +19,17 @@ const scrollToTop = () => {
 <template>
 
     <div class="accueil">
-        <Accueil/>
     </div>
 
+    <RouterView/>
+
     <div class="projets">
-        <Projets />
+        <Projets/>
     </div>
 
     <button class="back-to-top" @click="scrollToTop">
         ↑
     </button>
-
-    <RouterView/>
 </template>
 
 <style scoped>
