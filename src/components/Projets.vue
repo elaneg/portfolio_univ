@@ -17,9 +17,6 @@
             {{ tag }}
           </span>
                 </div>
-                <div class="detail-button-container">
-                    <button class="btn-detail" @click="redirectToProjet(projet.url)">Voir le détail →</button>
-                </div>
             </div>
         </div>
     </div>
@@ -66,8 +63,6 @@ export default {
                 },
             ],
 
-            selectedProjet: null,
-
             tagColors: {
                 "AC 4.1 : Développer à l’aide d’un framework de développement côté client": "#42b983",
                 "AC 4.2 : Développer à l’aide d’un framework de développement côté serveur": "#42b983",
@@ -85,11 +80,6 @@ export default {
 
         };
     },
-    methods: {
-        redirectToProjet(url) {
-            this.$router.push(url);
-        }
-    }
 };
 
 
@@ -154,26 +144,6 @@ export default {
     margin-bottom: 5px; /* Espace entre les tags */
     font-size: 12px;
     width: fit-content; /* Ajuster la largeur en fonction du contenu */
-}
-
-.detail-button-container {
-    bottom: 10px;
-    right: 10px;
-    float: right;
-}
-
-.btn-detail {
-    padding: 8px 16px;
-    background-color: #42b983;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.btn-detail:hover {
-    background-color: #36a06c;
 }
 
 </style>
