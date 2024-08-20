@@ -2,7 +2,7 @@
 import Accueil from "@/components/Accueil.vue";
 import Projets from "@/components/Projets.vue";
 
-const scrollSpeed = 10;
+const scrollSpeed = 20;
 const scrollToTop = () => {
     const scrollInterval = setInterval(() => {
         if (window.scrollY === 0) {

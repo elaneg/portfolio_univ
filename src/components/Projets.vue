@@ -67,12 +67,11 @@ export default {
                 "AC 4.5 : Maintenir et sécuriser un environnement numérique": "#42b983",
                 "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement)": "#42b983",
                 "AC 5.1 : Piloter un produit ou service": "#282383",
+                "AC 5.2 : Maîtriser la qualité en projet Web ou multimédia": "#282383",
+                "AC 5,3 : Créer un projet d’entreprise (nom, valeurs, missions...) ": "#282383",
                 "AC 5.4 : Ecrire un plan d’affaires": "#282383",
+                "AC 5,5 : Choisir une forme juridique ": "#282383",
                 "AC 5.6 : Construire une présentation convaincante": "#282383",
-                "UX/UI": "#2ecc71",
-                "Communication": "#e74c3c",
-                "Gestion de crise": "#9b59b6",
-                "Strategie": "#34495e",
         }
 
         };
