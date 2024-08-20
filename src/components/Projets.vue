@@ -17,6 +17,9 @@
             {{ tag }}
           </span>
                 </div>
+                <div class="detail-button-container">
+                    <button class="btn-detail">Voir le détail</button>
+                </div>
             </div>
         </div>
     </div>
@@ -72,12 +75,11 @@ export default {
                 "AC 5.4 : Ecrire un plan d’affaires": "#282383",
                 "AC 5,5 : Choisir une forme juridique ": "#282383",
                 "AC 5.6 : Construire une présentation convaincante": "#282383",
-        }
+            }
 
         };
     },
 };
-
 
 
 </script>
@@ -142,4 +144,25 @@ export default {
     font-size: 12px;
     width: fit-content; /* Ajuster la largeur en fonction du contenu */
 }
+
+.detail-button-container {
+    bottom: 10px;
+    right: 10px;
+    float: right;
+}
+
+.btn-detail {
+    padding: 8px 16px;
+    background-color: #42b983;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-detail:hover {
+    background-color: #36a06c;
+}
+
 </style>
