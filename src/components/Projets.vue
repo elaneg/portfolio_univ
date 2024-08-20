@@ -14,6 +14,8 @@
 <script>
 import portfolioImage from '../assets/protfolio_pro.jpg';
 import lunetterieImage from '../assets/lunetterie.jpg';
+import findusImage from '../assets/findus.jpg';
+import minhThaiImage from '../assets/micro_service.jpg';
 export default {
     name: "Projets",
     data() {
@@ -21,28 +23,24 @@ export default {
             projets: [
                 {
                     titre: "Portfolio professionnel",
-                    description: "Un site web portfolio pour présenter mes travaux professionnels.",
+                    description: "Développement d'un portfolio professionnel",
                     image: portfolioImage
                 },
                 {
-                    titre: "Projet Symfony",
-                    description: "Développement d'une application web avec Symfony.",
-                    // image: symfonyImage
+                    titre: "Création d'un micro service",
+                    description: "Développement d'une application avec Symfony qui contient un micro service",
+                    image: minhThaiImage
                 },
                 {
                     titre: "Lunetterie de Villeroy",
-                    description: "Site e-commerce pour une lunetterie.",
+                    description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
                     image: lunetterieImage
                 },
+
                 {
-                    titre: "Projet Minh-Thai",
-                    description: "Application de gestion de stock.",
-                    // image: minhThaiImage
-                },
-                {
-                    titre: "Findus",
-                    description: "Analyse et visualisation de données.",
-                    // image: findusImage
+                    titre: "Plan de communication & gestion de crise",
+                    description: "plan pour améliorer la qualité après la crise de viande de cheval pour Findus",
+                    image: findusImage
                 },
             ],
         };
