@@ -6,16 +6,20 @@
                 <img :src="projet.image" :alt="projet.titre" />
                 <h3>{{ projet.titre }}</h3>
                 <p>{{ projet.description }}</p>
+                <div class="tags">
+                    <span class="tag" v-for="(tag, index) in projet.tags" :key="index">{{ tag }}</span>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import portfolioImage from '../assets/protfolio_pro.jpg';
-import lunetterieImage from '../assets/lunetterie.jpg';
-import findusImage from '../assets/findus.jpg';
-import minhThaiImage from '../assets/micro_service.jpg';
+import portfolioImage from '@/assets/protfolio_pro.jpg';
+import lunetterieImage from '@/assets/lunetterie.jpg';
+import findusImage from '@/assets/findus.jpg';
+import minhThaiImage from '@/assets/micro_service.jpg';
+
 export default {
     name: "Projets",
     data() {
@@ -24,23 +28,26 @@ export default {
                 {
                     titre: "Portfolio professionnel",
                     description: "Développement d'un portfolio professionnel",
-                    image: portfolioImage
+                    image: portfolioImage,
+                    tags: ["Vue.js", "Design", "Front-End"]
                 },
                 {
                     titre: "Création d'un micro service",
                     description: "Développement d'une application avec Symfony qui contient un micro service",
-                    image: minhThaiImage
+                    image: minhThaiImage,
+                    tags: ["Symfony", "Back-End", "API"]
                 },
                 {
                     titre: "Lunetterie de Villeroy",
                     description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
-                    image: lunetterieImage
+                    image: lunetterieImage,
+                    tags: ["E-commerce", "3D", "UX/UI"]
                 },
-
                 {
                     titre: "Plan de communication & gestion de crise",
-                    description: "plan pour améliorer la qualité après la crise de viande de cheval pour Findus",
-                    image: findusImage
+                    description: "Plan pour améliorer la qualité après la crise de viande de cheval pour Findus",
+                    image: findusImage,
+                    tags: ["Communication", "Gestion de crise", "Stratégie"]
                 },
             ],
         };
@@ -91,4 +98,24 @@ export default {
     margin-bottom: 0;
     color: #555;
 }
+
+/* Style pour les tags */
+.tags {
+    margin-top: 10px;
+    /* Utiliser flex-direction: column pour empiler les tags verticalement */
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    background-color: #42b983;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 5px; /* Espace entre les tags */
+    font-size: 12px;
+    /* Assurer que les tags s'ajustent en largeur */
+    width: fit-content;
+}
+
 </style>
