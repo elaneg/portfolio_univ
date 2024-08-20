@@ -3,6 +3,7 @@
         <h2>Mes Projets</h2>
         <div class="projets-list">
             <div class="projet" v-for="(projet, index) in projets" :key="index">
+                <img :src="projet.image" :alt="projet.titre" />
                 <h3>{{ projet.titre }}</h3>
                 <p>{{ projet.description }}</p>
             </div>
@@ -16,10 +17,31 @@ export default {
     data() {
         return {
             projets: [
-                { titre: "Projet 1", description: "Description du projet 1." },
-                { titre: "Projet 2", description: "Description du projet 2." },
-                { titre: "Projet 3", description: "Description du projet 3." },
-                // Ajoutez d'autres projets ici
+                {
+                    titre: "Portfolio professionnel",
+                    description: "Un site web portfolio pour présenter mes travaux professionnels.",
+                    image: "https://via.placeholder.com/400x200.png?text=Portfolio+Professionnel"
+                },
+                {
+                    titre: "Projet Symfony",
+                    description: "Développement d'une application web avec Symfony.",
+                    image: "https://via.placeholder.com/400x200.png?text=Projet+Symfony"
+                },
+                {
+                    titre: "Lunetterie de Villeroy",
+                    description: "Site e-commerce pour une lunetterie.",
+                    image: "https://via.placeholder.com/400x200.png?text=Lunetterie+de+Villeroy"
+                },
+                {
+                    titre: "Projet Minh-Thai",
+                    description: "Application de gestion de stock.",
+                    image: "https://via.placeholder.com/400x200.png?text=Projet+Minh-Thai"
+                },
+                {
+                    titre: "Findus",
+                    description: "Analyse et visualisation de données.",
+                    image: "https://via.placeholder.com/400x200.png?text=Findus"
+                },
             ],
         };
     },
@@ -28,7 +50,7 @@ export default {
 
 <style scoped>
 .projets-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -44,8 +66,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-height: 500px; /* Limite la hauteur de la liste pour permettre le défilement */
-    overflow-y: auto; /* Active le défilement vertical si nécessaire */
+    /* Supprimé max-height et overflow-y pour enlever le scroll */
 }
 
 .projet {
@@ -56,8 +77,14 @@ export default {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.projet img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 .projet h3 {
-    margin-top: 0;
+    margin-top: 10px;
     color: #42b983;
 }
 
