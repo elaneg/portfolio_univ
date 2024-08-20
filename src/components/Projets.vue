@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import portfolioImage from '../assets/protfolio_pro.jpg';
+import lunetterieImage from '../assets/lunetterie.jpg';
 export default {
     name: "Projets",
     data() {
@@ -20,27 +22,27 @@ export default {
                 {
                     titre: "Portfolio professionnel",
                     description: "Un site web portfolio pour présenter mes travaux professionnels.",
-                    image: "https://via.placeholder.com/400x200.png?text=Portfolio+Professionnel"
+                    image: portfolioImage
                 },
                 {
                     titre: "Projet Symfony",
                     description: "Développement d'une application web avec Symfony.",
-                    image: "https://via.placeholder.com/400x200.png?text=Projet+Symfony"
+                    // image: symfonyImage
                 },
                 {
                     titre: "Lunetterie de Villeroy",
                     description: "Site e-commerce pour une lunetterie.",
-                    image: "https://via.placeholder.com/400x200.png?text=Lunetterie+de+Villeroy"
+                    image: lunetterieImage
                 },
                 {
                     titre: "Projet Minh-Thai",
                     description: "Application de gestion de stock.",
-                    image: "https://via.placeholder.com/400x200.png?text=Projet+Minh-Thai"
+                    // image: minhThaiImage
                 },
                 {
                     titre: "Findus",
                     description: "Analyse et visualisation de données.",
-                    image: "https://via.placeholder.com/400x200.png?text=Findus"
+                    // image: findusImage
                 },
             ],
         };
@@ -66,7 +68,6 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Supprimé max-height et overflow-y pour enlever le scroll */
 }
 
 .projet {
@@ -75,7 +76,6 @@ export default {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 8vh;
 }
 
 .projet img {
