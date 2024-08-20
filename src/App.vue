@@ -19,5 +19,12 @@ import Projets from "@/components/Projets.vue";
 
 <style scoped>
 
+.accueil {
+    margin-top: 30vh;
+}
+
+.projets {
+    margin-top: 20vh;
+}
 
 </style>
