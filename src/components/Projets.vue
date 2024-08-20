@@ -18,6 +18,10 @@
                     />
                 </div>
 
+                <div class="commentaire">
+                    <p>{{ projet.commentaire }}</p>
+                </div>
+
                 <div class="tags">
                     <span
                             v-for="(tag, index) in projet.tags"
@@ -54,6 +58,7 @@ export default {
                     description: "Développement d'un portfolio professionnel",
                     image: portfolioImage,
                     miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
                     tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.5 : Maintenir et sécuriser un environnement numérique "],
                     url: "/projet1"
                 },
@@ -62,6 +67,7 @@ export default {
                     description: "Développement d'une application avec Symfony qui contient un micro service",
                     image: minhThaiImage,
                     miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
                     tags: ["AC 4.2 : Développer à l’aide d’un framework de développement côté serveur", "AC 4.4 : Concevoir et développer des composants logiciels, plugins ou extension", "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement) \n"],
                     url: "/projet2"
                 },
@@ -70,6 +76,7 @@ export default {
                     description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
                     image: lunetterieImage,
                     miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
                     tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"],
                     url: "/projet3"
                 },
@@ -78,6 +85,7 @@ export default {
                     description: "Plan pour améliorer la qualité en vue d'obtenir le label RSE après la crise de viande de cheval pour Findus",
                     image: findusImage,
                     miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
                     tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"],
                     url: "/projet4"
                 },
