@@ -3,10 +3,25 @@
         <h2>Mes Projets</h2>
         <div class="projets-list">
             <div class="projet" v-for="(projet, index) in projets" :key="index">
-                <img :src="projet.image" :alt="projet.titre"/>
+                <img :src="projet.image" :alt="projet.titre" class="projet_image"/>
                 <h3>{{ projet.titre }}</h3>
                 <p>{{ projet.description }}</p>
-                <!-- Ajout des tags -->
+
+                <div class="miniatures">
+                    <img
+                            v-for="(miniature, idx) in projet.miniatures"
+                            :src="miniature"
+                            :key="idx"
+                            @click="openImage(miniature)"
+                            class="miniature-image"
+                            :alt="`Miniature ${idx + 1}`"
+                    />
+                </div>
+
+                <div class="commentaire">
+                    <p>{{ projet.commentaire }}</p>
+                </div>
+
                 <div class="tags">
                     <span
                             v-for="(tag, index) in projet.tags"
@@ -17,7 +32,12 @@
             {{ tag }}
           </span>
                 </div>
+
             </div>
+        </div>
+        <!-- Pop-up pour afficher l'image en grand -->
+        <div v-if="selectedImage" class="popup" @click="closeImage">
+            <img :src="selectedImage" class="popup-image" @click.stop alt=""/>
         </div>
     </div>
 </template>
@@ -37,27 +57,41 @@ export default {
                     titre: "Portfolio professionnel",
                     description: "Développement d'un portfolio professionnel",
                     image: portfolioImage,
-                    tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.5 : Maintenir et sécuriser un environnement numérique "]
+                    miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
+                    tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.5 : Maintenir et sécuriser un environnement numérique "],
+                    url: "/projet1"
                 },
                 {
                     titre: "Création d'un micro service",
                     description: "Développement d'une application avec Symfony qui contient un micro service",
                     image: minhThaiImage,
-                    tags: ["AC 4.2 : Développer à l’aide d’un framework de développement côté serveur", "AC 4.4 : Concevoir et développer des composants logiciels, plugins ou extension", "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement) \n"]
+                    miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
+                    tags: ["AC 4.2 : Développer à l’aide d’un framework de développement côté serveur", "AC 4.4 : Concevoir et développer des composants logiciels, plugins ou extension", "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement) \n"],
+                    url: "/projet2"
                 },
                 {
                     titre: "Lunetterie de Villeroy",
                     description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
                     image: lunetterieImage,
-                    tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"]
+                    miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
+                    tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"],
+                    url: "/projet3"
                 },
                 {
                     titre: "Plan à mettre en place afin d'obtenir un label de qualité",
                     description: "Plan pour améliorer la qualité en vue d'obtenir le label RSE après la crise de viande de cheval pour Findus",
                     image: findusImage,
-                    tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"]
+                    miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
+                    tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"],
+                    url: "/projet4"
                 },
             ],
+
+            selectedImage: null,
 
             tagColors: {
                 "AC 4.1 : Développer à l’aide d’un framework de développement côté client": "#42b983",
@@ -72,12 +106,31 @@ export default {
                 "AC 5.4 : Ecrire un plan d’affaires": "#282383",
                 "AC 5,5 : Choisir une forme juridique ": "#282383",
                 "AC 5.6 : Construire une présentation convaincante": "#282383",
-        }
+            }
 
         };
     },
-};
 
+    methods: {
+        openImage(image) {
+            this.selectedImage = image;
+            document.addEventListener('keydown', this.handleEsc);
+        },
+        closeImage() {
+            this.selectedImage = null;
+            document.removeEventListener('keydown', this.handleEsc);
+        },
+        handleEsc(event) {
+            if (event.key === 'Escape') {
+                this.closeImage();
+            }
+        }
+    },
+    beforeDestroy() {
+        document.removeEventListener('keydown', this.handleEsc);
+    }
+
+};
 
 
 </script>
@@ -110,7 +163,7 @@ export default {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.projet img {
+.projet_image {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -142,4 +195,39 @@ export default {
     font-size: 12px;
     width: fit-content; /* Ajuster la largeur en fonction du contenu */
 }
+
+.miniatures {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.miniature-image {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
 </style>
