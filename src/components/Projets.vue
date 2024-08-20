@@ -49,11 +49,11 @@ export default {
                     titre: "Lunetterie de Villeroy",
                     description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
                     image: lunetterieImage,
-                    tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique"]
+                    tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"]
                 },
                 {
-                    titre: "Plan de communication & gestion de crise",
-                    description: "Plan pour améliorer la qualité après la crise de viande de cheval pour Findus",
+                    titre: "Plan à mettre en place afin d'obtenir un label de qualité",
+                    description: "Plan pour améliorer la qualité en vue d'obtenir le label RSE après la crise de viande de cheval pour Findus",
                     image: findusImage,
                     tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"]
                 },
@@ -66,6 +66,7 @@ export default {
                 "AC 4.4 : Concevoir et développer des composants logiciels, plugins ou extension": "#42b983",
                 "AC 4.5 : Maintenir et sécuriser un environnement numérique": "#42b983",
                 "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement)": "#42b983",
+                "AC 5.1 : Piloter un produit ou service": "#282383",
                 "AC 5.4 : Ecrire un plan d’affaires": "#282383",
                 "AC 5.6 : Construire une présentation convaincante": "#282383",
                 "UX/UI": "#2ecc71",
