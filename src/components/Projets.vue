@@ -6,7 +6,7 @@
                 <img :src="projet.image" :alt="projet.titre"/>
                 <h3>{{ projet.titre }}</h3>
                 <p>{{ projet.description }}</p>
-                <!-- Ajout des tags -->
+
                 <div class="tags">
                     <span
                             v-for="(tag, index) in projet.tags"
@@ -18,7 +18,7 @@
           </span>
                 </div>
                 <div class="detail-button-container">
-                    <button class="btn-detail">Voir le détail</button>
+                    <button class="btn-detail" @click="redirectToProjet(projet.url)">Voir le détail →</button>
                 </div>
             </div>
         </div>
@@ -40,27 +40,33 @@ export default {
                     titre: "Portfolio professionnel",
                     description: "Développement d'un portfolio professionnel",
                     image: portfolioImage,
-                    tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.5 : Maintenir et sécuriser un environnement numérique "]
+                    tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.5 : Maintenir et sécuriser un environnement numérique "],
+                    url: "/projet1"
                 },
                 {
                     titre: "Création d'un micro service",
                     description: "Développement d'une application avec Symfony qui contient un micro service",
                     image: minhThaiImage,
-                    tags: ["AC 4.2 : Développer à l’aide d’un framework de développement côté serveur", "AC 4.4 : Concevoir et développer des composants logiciels, plugins ou extension", "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement) \n"]
+                    tags: ["AC 4.2 : Développer à l’aide d’un framework de développement côté serveur", "AC 4.4 : Concevoir et développer des composants logiciels, plugins ou extension", "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement) \n"],
+                    url: "/projet2"
                 },
                 {
                     titre: "Lunetterie de Villeroy",
                     description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
                     image: lunetterieImage,
-                    tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"]
+                    tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"],
+                    url: "/projet3"
                 },
                 {
                     titre: "Plan à mettre en place afin d'obtenir un label de qualité",
                     description: "Plan pour améliorer la qualité en vue d'obtenir le label RSE après la crise de viande de cheval pour Findus",
                     image: findusImage,
-                    tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"]
+                    tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"],
+                    url: "/projet4"
                 },
             ],
+
+            selectedProjet: null,
 
             tagColors: {
                 "AC 4.1 : Développer à l’aide d’un framework de développement côté client": "#42b983",
@@ -79,6 +85,11 @@ export default {
 
         };
     },
+    methods: {
+        redirectToProjet(url) {
+            this.$router.push(url);
+        }
+    }
 };
 
 
