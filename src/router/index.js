@@ -1,6 +1,5 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import Projets from "@/components/Projets.vue";
-import ProjetDetail from "@/components/ProjetDetail.vue";
 import Accueil from "@/components/Accueil.vue";
 
 const router = createRouter({
@@ -15,11 +14,6 @@ const router = createRouter({
             path: '/projets',
             name: 'Projets',
             component: Projets
-        },
-        {
-            path: '/projets/:id',
-            name: 'ProjetDetail',
-            component: ProjetDetail
         },
     ]
 })

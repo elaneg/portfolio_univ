@@ -2,22 +2,15 @@
     <div class="projets-container">
         <h2>Mes Projets</h2>
         <div class="projets-list">
-            <router-link
-                v-for="(projet, index) in projets"
-                :key="projet.id"
-                :to="{ name: 'ProjetDetail', params: { id: projet.id } }"
-                class="projet-link"
-            >
-                <div class="projet">
-                    <img :src="projet.image" :alt="projet.titre" />
-                    <h3>{{ projet.titre }}</h3>
-                    <p>{{ projet.description }}</p>
-                    <!-- Affichage des tags -->
-                    <div class="tags">
-                        <span class="tag" v-for="(tag, index) in projet.tags" :key="index">{{ tag }}</span>
-                    </div>
+            <div class="projet" v-for="(projet, index) in projets" :key="index">
+                <img :src="projet.image" :alt="projet.titre" />
+                <h3>{{ projet.titre }}</h3>
+                <p>{{ projet.description }}</p>
+                <!-- Ajout des tags -->
+                <div class="tags">
+                    <span class="tag" v-for="(tag, index) in projet.tags" :key="index">{{ tag }}</span>
                 </div>
-            </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -34,28 +27,24 @@ export default {
         return {
             projets: [
                 {
-                    id: 1,
                     titre: "Portfolio professionnel",
                     description: "Développement d'un portfolio professionnel",
-                    image: portfolioImage, // Utilisation correcte de l'import
+                    image: portfolioImage,
                     tags: ["Vue.js", "Design", "Front-End"]
                 },
                 {
-                    id: 2,
                     titre: "Création d'un micro service",
                     description: "Développement d'une application avec Symfony qui contient un micro service",
                     image: minhThaiImage,
                     tags: ["Symfony", "Back-End", "API"]
                 },
                 {
-                    id: 3,
                     titre: "Lunetterie de Villeroy",
                     description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
                     image: lunetterieImage,
                     tags: ["E-commerce", "3D", "UX/UI"]
                 },
                 {
-                    id: 4,
                     titre: "Plan de communication & gestion de crise",
                     description: "Plan pour améliorer la qualité après la crise de viande de cheval pour Findus",
                     image: findusImage,
@@ -68,12 +57,6 @@ export default {
 </script>
 
 <style scoped>
-/* Ajoutez des styles pour le lien */
-.projet-link {
-    text-decoration: none;
-    color: inherit;
-}
-
 .projets-container {
     width: 100%;
     margin: 0 auto;
