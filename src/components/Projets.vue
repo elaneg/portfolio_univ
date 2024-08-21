@@ -56,6 +56,9 @@ import port_pro_trace3 from '@/assets/port_pro_trace3.jpg';
 import s6symfony_trace1 from '@/assets/s6symfony_trace1.jpg';
 import s6symfony_trace2 from '@/assets/s6symfony_trace2.jpg';
 import s6symfony_trace3 from '@/assets/s6symfony_trace3.jpg';
+import lunetterie_trace1 from '@/assets/lunetterie_trace1.jpg';
+import lunetterie_trace2 from '@/assets/lunetterie_trace2.jpg';
+import lunetterie_trace3 from '@/assets/lunetterie_trace3.jpg';
 
 export default {
     name: "Projets",
@@ -84,7 +87,7 @@ export default {
                     titre: "Lunetterie de Villeroy",
                     description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
                     image: lunetterieImage,
-                    miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    miniatures: [lunetterie_trace1, lunetterie_trace2, lunetterie_trace3],
                     commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
                     tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"],
                     url: "/projet3"
