@@ -28,8 +28,8 @@ watch(isDarkTheme, (newValue) => {
     document.body.classList.toggle('dark-theme', newValue);
 });
 
-const darkModeIcon = "../src/assets/dark_mode_dark.svg";
-const lightModeIcon = "../src/assets/dark_mode.svg";
+const darkModeIcon = "./public/dark_mode_dark.svg";
+const lightModeIcon = "./public/dark_mode.svg";
 
 </script>
 
@@ -39,6 +39,7 @@ const lightModeIcon = "../src/assets/dark_mode.svg";
            alt="changer de thème">
 
     <div class="accueil">
+        <Accueil/>
     </div>
 
     <RouterView/>
@@ -95,17 +96,5 @@ const lightModeIcon = "../src/assets/dark_mode.svg";
     font-size: 14px;
     transition: background-color 0.3s ease;
 }
-
-/* Thème clair (par défaut) */
-/*body {*/
-/*    background-color: #ffffff;*/
-/*    color: #000000;*/
-/*}*/
-
-/*!* Thème sombre *!*/
-/*body.dark-theme {*/
-/*    background-color: #333333;*/
-/*    color: #ffffff;*/
-/*}*/
 
 </style>

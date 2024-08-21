@@ -44,24 +44,24 @@
 </template>
 
 <script>
-import portfolioImage from '@/assets/protfolio_pro.jpg';
-import lunetterieImage from '@/assets/lunetterie.jpg';
-import findusImage from '@/assets/findus.jpg';
-import minhThaiImage from '@/assets/micro_service.jpg';
+import portfolioImage from '../public/protfolio_pro.jpg';
+import lunetterieImage from '../public/lunetterie.jpg';
+import findusImage from '../public/findus.jpg';
+import minhThaiImage from '../public/micro_service.jpg';
 
 //traces
-import port_pro_trace1 from '@/assets/port_pro_trace1.jpg';
-import port_pro_trace2 from '@/assets/port_pro_trace2.jpg';
-import port_pro_trace3 from '@/assets/port_pro_trace3.jpg';
-import s6symfony_trace1 from '@/assets/s6symfony_trace1.jpg';
-import s6symfony_trace2 from '@/assets/s6symfony_trace2.jpg';
-import s6symfony_trace3 from '@/assets/s6symfony_trace3.jpg';
-import lunetterie_trace1 from '@/assets/lunetterie_trace1.jpg';
-import lunetterie_trace2 from '@/assets/lunetterie_trace2.jpg';
-import lunetterie_trace3 from '@/assets/lunetterie_trace3.jpg';
-import findus_trace1 from '@/assets/findus_trace1.jpg';
-import findus_trace2 from '@/assets/findus_trace2.jpg';
-import findus_trace3 from '@/assets/findus_trace3.jpg';
+import port_pro_trace1 from '../public/port_pro_trace1.jpg';
+import port_pro_trace2 from '../public/port_pro_trace2.jpg';
+import port_pro_trace3 from '../public/port_pro_trace3.jpg';
+import s6symfony_trace1 from '../public/s6symfony_trace1.jpg';
+import s6symfony_trace2 from '../public/s6symfony_trace2.jpg';
+import s6symfony_trace3 from '../public/s6symfony_trace3.jpg';
+import lunetterie_trace1 from '../public/lunetterie_trace1.jpg';
+import lunetterie_trace2 from '../public/lunetterie_trace2.jpg';
+import lunetterie_trace3 from '../public/lunetterie_trace3.jpg';
+import findus_trace1 from '../public/findus_trace1.jpg';
+import findus_trace2 from '../public/findus_trace2.jpg';
+import findus_trace3 from '../public/findus_trace3.jpg';
 
 export default {
     name: "Projets",
@@ -242,8 +242,8 @@ export default {
 }
 
 .miniature-image {
-    width: 200px;
-    height: 100px;
+    width: 20%;
+    height: 10%;
     object-fit: cover;
     border-radius: 4px;
     cursor: pointer;

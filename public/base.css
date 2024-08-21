@@ -1,0 +1,60 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --background-color-light: #ffffff;
+  --background-color-dark: #2d3959;
+  --text-color-light: #2d3959;
+  --text-color-dark: #e5e5e5;
+  --link-color-light: hsl(0, 71%, 74%);
+  --link-color-dark: hsl(0, 69%, 69%);
+  --hover-background-light: hsla(2, 100%, 37%, 0.2);
+  --hover-background-dark: hsla(0, 100%, 37%, 0.4);
+}
+
+[data-theme='light'] {
+  --color-background: var(--background-color-light);
+  --color-text: var(--text-color-light);
+  --link-color: var(--link-color-light);
+  --hover-background: var(--hover-background-light);
+}
+
+[data-theme='dark'] {
+  --color-background: var(--background-color-dark);
+  --color-text: var(--text-color-dark);
+  --link-color: var(--link-color-dark);
+  --hover-background: var(--hover-background-dark);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
