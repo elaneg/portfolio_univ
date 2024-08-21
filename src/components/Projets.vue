@@ -78,7 +78,7 @@ export default {
                         " Le développement s'est réalisé étape par étape, à commencer par la création des branches DEV et MASTER sur github, l'intégration, l'ajout des styles et enfin, la mise en production." +
                         " Cette dernière a été un défi car c'était la première que je la faisais entièrement seule, sans enseignant ou chef de projet, et ne s'est pas déroulée sans encombre." +
                         " D'un point de vue plus technique, j'ai choisi de développer ce portfolio en utilisant VueJs car je souhaitais le rendre dynamique, sans temps de recharge entre les onglets." +
-                        " J'ai également pris soin de le rendre accessible aux lecteurs d'écran via des balises ARIA dans la structure HTML. ",
+                        " J'ai également pris soin de le rendre accessible aux lecteurs d'écran via des balises ARIA dans la structure HTML, et ai effectué des recherches dessus de mon côté afin de les mettre correctement en place. ",
                     tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.5 : Maintenir et sécuriser un environnement numérique "],
                     url: "/projet1"
                 },
