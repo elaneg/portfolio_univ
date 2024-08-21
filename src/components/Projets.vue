@@ -59,6 +59,9 @@ import s6symfony_trace3 from '@/assets/s6symfony_trace3.jpg';
 import lunetterie_trace1 from '@/assets/lunetterie_trace1.jpg';
 import lunetterie_trace2 from '@/assets/lunetterie_trace2.jpg';
 import lunetterie_trace3 from '@/assets/lunetterie_trace3.jpg';
+import findus_trace1 from '@/assets/findus_trace1.jpg';
+import findus_trace2 from '@/assets/findus_trace2.jpg';
+import findus_trace3 from '@/assets/findus_trace3.jpg';
 
 export default {
     name: "Projets",
@@ -96,7 +99,7 @@ export default {
                     titre: "Plan à mettre en place afin d'obtenir un label de qualité",
                     description: "Plan pour améliorer la qualité en vue d'obtenir le label RSE après la crise de viande de cheval pour Findus",
                     image: findusImage,
-                    miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    miniatures: [findus_trace1, findus_trace2, findus_trace3],
                     commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
                     tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"],
                     url: "/projet4"
