@@ -76,6 +76,6 @@ export default {
 }
 
 .ue5 .color-box {
-    background-color: #282383;
+    background-color: #413ba9;
 }
 </style>
