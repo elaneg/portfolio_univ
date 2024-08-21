@@ -5,25 +5,25 @@
             <div class="projet" v-for="(projet, index) in projets" :key="index">
                 <img :src="projet.image" :alt="projet.titre" class="projet_image"/>
                 <div class="projet_com">
-                <h3>{{ projet.titre }}</h3>
-                <p>{{ projet.description }}</p>
+                    <h3>{{ projet.titre }}</h3>
+                    <p>{{ projet.description }}</p>
 
-                <div class="miniatures">
-                    <img
-                            v-for="(miniature, idx) in projet.miniatures"
-                            :src="miniature"
-                            :key="idx"
-                            @click="openImage(miniature)"
-                            class="miniature-image"
-                            :alt="`Miniature ${idx + 1}`"
-                    />
-                </div>
+                    <div class="miniatures">
+                        <img
+                                v-for="(miniature, idx) in projet.miniatures"
+                                :src="miniature"
+                                :key="idx"
+                                @click="openImage(miniature)"
+                                class="miniature-image"
+                                :alt="`Miniature ${idx + 1}`"
+                        />
+                    </div>
 
-                <div class="commentaire">
-                    <p>{{ projet.commentaire }}</p>
-                </div>
+                    <div class="commentaire">
+                        <p>{{ projet.commentaire }}</p>
+                    </div>
 
-                <div class="tags">
+                    <div class="tags">
                     <span
                             v-for="(tag, index) in projet.tags"
                             :key="index"
@@ -32,8 +32,8 @@
                     >
             {{ tag }}
           </span>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
         <!-- Pop-up pour afficher l'image en grand -->
@@ -73,7 +73,12 @@ export default {
                     description: "Développement d'un portfolio professionnel",
                     image: portfolioImage,
                     miniatures: [port_pro_trace1, port_pro_trace2, port_pro_trace3],
-                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
+                    commentaire: "J'ai créé ce portfolio dans le cadre de ma dernière année de formation. Il avait donc un objectif à la fois professionnel, universitaire et un peu personnel." +
+                        " Le front-end n'étant pas ma spécialité, j'ai voulu faire quelque chose visuellement simple, et qui soit par-dessus tout accessible et facile à utiliser." +
+                        " Le développement s'est réalisé étape par étape, à commencer par la création des branches DEV et MASTER sur github, l'intégration, l'ajout des styles et enfin, la mise en production." +
+                        " Cette dernière a été un défi car c'était la première que je la faisais entièrement seule, sans enseignant ou chef de projet, et ne s'est pas déroulée sans encombre." +
+                        " D'un point de vue plus technique, j'ai choisi de développer ce portfolio en utilisant VueJs car je souhaitais le rendre dynamique, sans temps de recharge entre les onglets." +
+                        " J'ai également pris soin de le rendre accessible aux lecteurs d'écran via des balises ARIA dans la structure HTML. ",
                     tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.5 : Maintenir et sécuriser un environnement numérique "],
                     url: "/projet1"
                 },
