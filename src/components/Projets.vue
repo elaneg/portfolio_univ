@@ -48,6 +48,9 @@ import portfolioImage from '@/assets/protfolio_pro.jpg';
 import lunetterieImage from '@/assets/lunetterie.jpg';
 import findusImage from '@/assets/findus.jpg';
 import minhThaiImage from '@/assets/micro_service.jpg';
+import port_pro_trace1 from '@/assets/port_pro_trace1.jpg';
+import port_pro_trace2 from '@/assets/port_pro_trace2.jpg';
+import port_pro_trace3 from '@/assets/port_pro_trace3.jpg';
 
 export default {
     name: "Projets",
@@ -58,7 +61,7 @@ export default {
                     titre: "Portfolio professionnel",
                     description: "Développement d'un portfolio professionnel",
                     image: portfolioImage,
-                    miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    miniatures: [port_pro_trace1, port_pro_trace2, port_pro_trace3],
                     commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
                     tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.5 : Maintenir et sécuriser un environnement numérique "],
                     url: "/projet1"
