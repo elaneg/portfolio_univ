@@ -98,7 +98,11 @@ export default {
                     description: "Proposition de site avec objet 3D pour la Lunetterie de Villeroy",
                     image: lunetterieImage,
                     miniatures: [lunetterie_trace1, lunetterie_trace2, lunetterie_trace3],
-                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
+                    commentaire: "Ce projet consistait à modéliser les bâtiments de la lunetterie en 3D et de l'intégrer à un site, à réaliser en groupe." +
+                        " Avec mes deux camarades, nous avons choisi de coder le site en ThreeJs afin d'intégrer le modèle 3D et de pouvoir intéragir avec." +
+                        " ThreeJs n'étant pas vue en cours à l'IUT, il a fallu nous documenter nous-mêmes sur cette technologie et sa mise en production, ce qui a consisté tout le défi de ce projet." +
+                        " En premier lieu il a fallu créer le modèle avec Blender, puis développer le site. En parallèle nous avons créé un site type kickstarter afin d'avoir un suivi du développement du projet." +
+                        " En groupe, nous avons créé une agence fictive, Format3D, et avons écrit un pitch autour de l'agence et du site pour simuler la demande d'investissements dans le projet.",
                     tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"],
                     url: "/projet3"
                 },
