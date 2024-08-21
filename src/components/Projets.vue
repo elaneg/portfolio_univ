@@ -4,6 +4,7 @@
         <div class="projets-list">
             <div class="projet" v-for="(projet, index) in projets" :key="index">
                 <img :src="projet.image" :alt="projet.titre" class="projet_image"/>
+                <div class="projet_com">
                 <h3>{{ projet.titre }}</h3>
                 <p>{{ projet.description }}</p>
 
@@ -32,7 +33,7 @@
             {{ tag }}
           </span>
                 </div>
-
+            </div>
             </div>
         </div>
         <!-- Pop-up pour afficher l'image en grand -->
@@ -100,12 +101,12 @@ export default {
                 "AC 4.4 : Concevoir et développer des composants logiciels, plugins ou extension": "#42b983",
                 "AC 4.5 : Maintenir et sécuriser un environnement numérique": "#42b983",
                 "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement)": "#42b983",
-                "AC 5.1 : Piloter un produit ou service": "#282383",
-                "AC 5.2 : Maîtriser la qualité en projet Web ou multimédia": "#282383",
-                "AC 5,3 : Créer un projet d’entreprise (nom, valeurs, missions...) ": "#282383",
-                "AC 5.4 : Ecrire un plan d’affaires": "#282383",
-                "AC 5,5 : Choisir une forme juridique ": "#282383",
-                "AC 5.6 : Construire une présentation convaincante": "#282383",
+                "AC 5.1 : Piloter un produit ou service": "#413ba9",
+                "AC 5.2 : Maîtriser la qualité en projet Web ou multimédia": "#413ba9",
+                "AC 5,3 : Créer un projet d’entreprise (nom, valeurs, missions...) ": "#413ba9",
+                "AC 5.4 : Ecrire un plan d’affaires": "#413ba9",
+                "AC 5,5 : Choisir une forme juridique ": "#413ba9",
+                "AC 5.6 : Construire une présentation convaincante": "#413ba9",
             }
 
         };
@@ -137,7 +138,7 @@ export default {
 
 <style scoped>
 .projets-container {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -156,32 +157,39 @@ export default {
 }
 
 .projet {
-    padding: 15px;
-    background-color: #f9f9f9;
+    /*background-color: #868686;*/
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20vh;
+}
+
+.projet_com {
+    padding: 15px;
 }
 
 .projet_image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 .projet h3 {
+    font-size: 30px;
     margin-top: 10px;
-    color: #42b983;
+    color: #e77a7a;
 }
 
 .projet p {
     margin-bottom: 0;
-    color: #555;
+    font-size: 18px;
+    /*color: #555;*/
 }
 
 /* Style pour les tags */
 .tags {
-    margin-top: 10px;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
     display: flex;
     flex-direction: column;
 }
@@ -191,16 +199,17 @@ export default {
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
-    margin-bottom: 5px; /* Espace entre les tags */
-    font-size: 12px;
-    width: fit-content; /* Ajuster la largeur en fonction du contenu */
+    margin-top: 2vh;
+    font-size: 14px;
+    width: fit-content;
 }
 
 .miniatures {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 .miniature-image {
