@@ -8,7 +8,8 @@
             et de l'Internet). </p>
         <p>
             <a href="https://787828270-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FWuu4m1EQjyaVJ7qOCUU9%2Fuploads%2FQs02bMLkY7DiqPFXo2gc%2FMMI_BU_2.PDF?alt=media&token=9ac48110-ef0e-43dc-9dc0-a194e8ed81b6"
-            target="_blank"
+               class="referentiel"
+               target="_blank"
             >Voir
                 le référentiel de compétences</a></p>
     </div>
@@ -49,6 +50,11 @@ export default {
     text-align: center;
 }
 
+.referentiel {
+    margin-top: 4vh;
+    font-size: 25px;
+}
+
 .legende {
     margin-top: 20px;
     text-align: center;
@@ -76,6 +82,6 @@ export default {
 }
 
 .ue5 .color-box {
-    background-color: #282383;
+    background-color: #413ba9;
 }
 </style>
