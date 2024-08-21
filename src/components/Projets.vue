@@ -111,7 +111,11 @@ export default {
                     description: "Plan pour améliorer la qualité en vue d'obtenir le label RSE après la crise de viande de cheval pour Findus",
                     image: findusImage,
                     miniatures: [findus_trace1, findus_trace2, findus_trace3],
-                    commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
+                    commentaire: "Notre groupe, constitué de cinq étudiants, devions créer un plan d'actions permettant l'obtention d'un label RSE. Nous avons commencé par un brainstorming pour rassembler toutes nos idées, puis nous nous sommes divisé le travail en cinq. " +
+                        " La principale difficulté était le temps, car nous avions un peu moins de deux jours pour réaliser un dossier et un support pour une présentation orale, et beaucoup d'idées. " +
+                        " Même si nous avions un groupe sur Discord, nous l'avons très peu utilisé car pendant ces deux jours nous étions toujours tous les cinq dans la même pièce." +
+                        " Nous avons choisi Findus comme entreprise, car ce travail était dans la continuité d'un autre travail réalisé au semestre 5, qui consistait à créer un plan de gestion de crise." +
+                        " Nous avions trouvé que Findus et la polémique sur la viande de cheval en 2013 étaient adaptés.",
                     tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"],
                     url: "/projet4"
                 },
