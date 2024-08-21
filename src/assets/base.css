@@ -1,13 +1,13 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --background-color-light: #ffffff;
-  --background-color-dark: #343434;
-  --text-color-light: #000000;
-  --text-color-dark: #ffffff;
-  --link-color-light: hsla(160, 100%, 37%, 1);
-  --link-color-dark: hsla(160, 100%, 37%, 0.8);
-  --hover-background-light: hsla(160, 100%, 37%, 0.2);
-  --hover-background-dark: hsla(160, 100%, 37%, 0.4);
+  --background-color-dark: #2d3959;
+  --text-color-light: #2d3959;
+  --text-color-dark: #e5e5e5;
+  --link-color-light: hsl(0, 71%, 74%);
+  --link-color-dark: hsl(0, 69%, 69%);
+  --hover-background-light: hsla(2, 100%, 37%, 0.2);
+  --hover-background-dark: hsla(0, 100%, 37%, 0.4);
 }
 
 [data-theme='light'] {

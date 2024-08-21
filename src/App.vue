@@ -66,23 +66,23 @@ const lightModeIcon = "../src/assets/dark_mode.svg";
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #42b983;
-    color: white;
+    background-color: var(--link-color);
+    color: var(--color-text);
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease;
 }
 
 .back-to-top:hover {
-    background-color: #36a06c;
+    background-color: var(--hover-background);
 }
 
 .theme-toggle {
