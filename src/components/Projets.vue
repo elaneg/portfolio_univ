@@ -165,7 +165,7 @@ export default {
 .projets-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 36px;
     color: #333;
 }
 
