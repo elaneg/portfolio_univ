@@ -48,9 +48,14 @@ import portfolioImage from '@/assets/protfolio_pro.jpg';
 import lunetterieImage from '@/assets/lunetterie.jpg';
 import findusImage from '@/assets/findus.jpg';
 import minhThaiImage from '@/assets/micro_service.jpg';
+
+//traces
 import port_pro_trace1 from '@/assets/port_pro_trace1.jpg';
 import port_pro_trace2 from '@/assets/port_pro_trace2.jpg';
 import port_pro_trace3 from '@/assets/port_pro_trace3.jpg';
+import s6symfony_trace1 from '@/assets/s6symfony_trace1.jpg';
+import s6symfony_trace2 from '@/assets/s6symfony_trace2.jpg';
+import s6symfony_trace3 from '@/assets/s6symfony_trace3.jpg';
 
 export default {
     name: "Projets",
@@ -70,7 +75,7 @@ export default {
                     titre: "Création d'un micro service",
                     description: "Développement d'une application avec Symfony qui contient un micro service",
                     image: minhThaiImage,
-                    miniatures: [portfolioImage, lunetterieImage, findusImage],
+                    miniatures: [s6symfony_trace1, s6symfony_trace2, s6symfony_trace3],
                     commentaire: "Un projet personnel visant à présenter mes compétences en tant que développeur.",
                     tags: ["AC 4.2 : Développer à l’aide d’un framework de développement côté serveur", "AC 4.4 : Concevoir et développer des composants logiciels, plugins ou extension", "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement) \n"],
                     url: "/projet2"
