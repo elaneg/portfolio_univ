@@ -103,7 +103,7 @@ export default {
                         " ThreeJs n'étant pas vue en cours à l'IUT, il a fallu nous documenter nous-mêmes sur cette technologie et sa mise en production, ce qui a consisté tout le défi de ce projet." +
                         " En premier lieu il a fallu créer le modèle avec Blender, puis développer le site. En parallèle nous avons créé un site type kickstarter afin d'avoir un suivi du développement du projet." +
                         " En groupe, nous avons créé une agence fictive, Format3D, et avons écrit un pitch autour de l'agence et du site pour simuler la demande d'investissements dans le projet.",
-                    tags: ["AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service"],
+                    tags: ["AC 4.1 : Développer à l’aide d’un framework de développement côté client", "AC 4.3 : Développer des dispositifs interactifs sophistiqués (jeux, réalité virtuelle, webGL, 3D…)", "AC 4.5 : Maintenir et sécuriser un environnement numérique", "AC 5.1 : Piloter un produit ou service", "AC 5.3 : Créer un projet d’entreprise (nom, valeurs, missions...)", "AC 5,5 : Choisir une forme juridique ", "AC 5.6 : Construire une présentation convaincante" ],
                     url: "/projet3"
                 },
                 {
@@ -116,7 +116,7 @@ export default {
                         " Même si nous avions un groupe sur Discord, nous l'avons très peu utilisé car pendant ces deux jours nous étions toujours tous les cinq dans la même pièce." +
                         " Nous avons choisi Findus comme entreprise, car ce travail était dans la continuité d'un autre travail réalisé au semestre 5, qui consistait à créer un plan de gestion de crise." +
                         " Nous avions trouvé que Findus et la polémique sur la viande de cheval en 2013 étaient adaptés.",
-                    tags: ["AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"],
+                    tags: ["AC 5.2 : Maîtriser la qualité en projet Web ou multimédia", "AC 5.4 : Ecrire un plan d’affaires", "AC 5.6 : Construire une présentation convaincante"],
                     url: "/projet4"
                 },
             ],
@@ -132,7 +132,7 @@ export default {
                 "AC 4.6 : Mettre en place une chaîne d’intégration continue (test, recettage, déploiement)": "#42b983",
                 "AC 5.1 : Piloter un produit ou service": "#413ba9",
                 "AC 5.2 : Maîtriser la qualité en projet Web ou multimédia": "#413ba9",
-                "AC 5,3 : Créer un projet d’entreprise (nom, valeurs, missions...) ": "#413ba9",
+                "AC 5.3 : Créer un projet d’entreprise (nom, valeurs, missions...)": "#413ba9",
                 "AC 5.4 : Ecrire un plan d’affaires": "#413ba9",
                 "AC 5,5 : Choisir une forme juridique ": "#413ba9",
                 "AC 5.6 : Construire une présentation convaincante": "#413ba9",
